@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input Validation</title>
+</head>
+
+<body>
+
+    <script>
+        let number;
+
+        do {
+            number = parseInt(prompt("Enter a number between 1 and 10:"));
+        } while (isNaN(number) || number < 1 || number > 10);
+
+        alert("Thank you! You entered: " + number);
+    </script>
+
+</body>
+
+</html>
